@@ -1,0 +1,51 @@
+/*//// HEADER ////*/
+header {
+    background-color: var(--fondo-color-claro);
+    height: 50vh;
+}
+
+/*//// MAIN (HOME) ////*/
+.section-1 article h2 {
+    color: var(--texto-color-oscuro);
+}
+
+.section-1 .cont-texto-foto {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.section-1 .cont-texto-foto .cont-foto {
+    background-color: black;
+    flex: 250px;
+}
+
+.section-1 .cont-texto-foto .cont-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-1 .cont-texto-foto .cont-texto {
+    flex: 250px;
+}
+
+.section-1 .cont-texto-foto .cont-texto p:first-of-type {
+    margin: 0;
+}
+
+.section-2 {
+    text-align: center;
+    font-family: 'Alkatra';
+}
+
+.card {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px #505050;
+}
+
+.card p {
+    color: var(--texto-color-oscuro);
+}

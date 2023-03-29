@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fondo-color-claro: #b0f0d0;
+    --fondo-color-oscuro: #40a080;
+    --fondo-blanco: #fbfbfb;
+    --fondo-negro: #202020;
+    --fondo-gris: #e0e0e0;
+
+    --texto-color-claro: #90f0d0;
+    --texto-color-oscuro: #008060;
+    --texto-color-brillante: #00ffb0;
+    --texto-blanco: #fbfbfb;
+    --texto-negro: #000000;
+    --texto-gris-claro: #c0c0c0;
+    --texto-gris-oscuro: #505050;
+
+    --selection-background: #307060;
+    --selection-color: white;
+}
+
+::-moz-selection { /* Codigo para Firefox */
+    background: var(--selection-background);
+    color: var(--selection-color);
+}
+  
+::selection {
+    background: var(--selection-background);
+    color: var(--selection-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--fondo-negro);
+    border-left: 2px solid black;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #606060;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #808080;
+}
+
+body {
+    background-color: var(--fondo-blanco);
+    color: var(--texto-negro);
+    font-size: 1.1rem;
+    font-family: 'Cabin', sans-serif;
+}
+
+/*//// NAV ////*/
+nav {
+    background-color: var(--fondo-color-oscuro);
+    position: sticky;
+    top: -1px;
+    z-index: 100;
+    display: flex;
+    padding: 4px;
+    justify-content: right;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0 10px;
+}
+
+nav ul li {
+    color: var(--texto-blanco);
+    padding: 3px;
+    margin: 0 3px;
+}
+
+nav ul li:hover {
+    color: var(--texto-color-brillante);
+}
+
+/*//// MAIN ////*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+article {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px 0;
+}
+
+article h2 {
+    margin-bottom: 15px;
+}
+
+article p {
+    margin-top: 10px;
+}
+
+/*//// FOOTER ////*/
+footer {
+    background-color: var(--fondo-gris);
+    color: var(--texto-gris-oscuro);
+    padding: 60px 40px;
+    text-align: center;
+}
+
+footer ul {
+    display: block;
+    list-style: none;
+    margin-top: 20px;
+}
+
+
+/*//// PUNTO DE CORTE 500PX ////*/
+@media (max-width: 500px) {
+    nav {
+        justify-content: center;
+    }
+    section {
+        padding: 20px 20px;
+    }
+    footer {
+        padding: 60px 20px;
+    }
+}
+
+/*//// PUNTO DE CORTE 300PX ////*/
+@media (max-width: 300px) {
+    section {
+        padding: 20px 10px;
+    }
+    footer {
+        padding: 60px 10px;
+    }
+}
