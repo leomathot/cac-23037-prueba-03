@@ -5,21 +5,31 @@
 }
 
 :root {
-    --fondo-color-claro: #b0f0d0;
-    --fondo-color-oscuro: #40a080;
-    --fondo-blanco: #fbfbfb;
-    --fondo-negro: #202020;
-    --fondo-gris: #e0e0e0;
+    --color-1: #fff9a1;
+    --color-2: #ff531f;
+    --color-3: #ffb6ef;
+    --color-4: #e72848;
 
-    --texto-color-claro: #90f0d0;
-    --texto-color-oscuro: #008060;
-    --texto-color-brillante: #00ffb0;
-    --texto-blanco: #fbfbfb;
-    --texto-negro: #000000;
-    --texto-gris-claro: #c0c0c0;
-    --texto-gris-oscuro: #505050;
+    --grad-fondo: linear-gradient(
+        135deg, 
+        var(--color-3), 
+        var(--color-1)
+    );
 
-    --selection-background: #307060;
+    --grad-card: linear-gradient(
+        135deg, 
+        rgba(255, 0, 0, 0.15), 
+        transparent 30%,
+        transparent
+    );
+
+    --blanco: #fbfbfb;
+    --negro: #202020;
+
+    --gris-claro: #c0c0c0;
+    --gris-oscuro: #505050;
+
+    --selection-background: #864b81;
     --selection-color: white;
 }
 
@@ -42,28 +52,37 @@ html {
 }
   
 ::-webkit-scrollbar-track {
-    background: var(--fondo-negro);
-    border-left: 2px solid black;
+    background: #101010;
 }
   
 ::-webkit-scrollbar-thumb {
-    background: #606060;
+    background: #303030;
 }
   
 ::-webkit-scrollbar-thumb:hover {
-    background: #808080;
+    background: #606060;
+}
+
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    background-image: var(--grad-fondo)
 }
 
 body {
-    background-color: var(--fondo-blanco);
-    color: var(--texto-negro);
+    color: var(--negro);
     font-size: 1.1rem;
     font-family: 'Cabin', sans-serif;
 }
 
 /*//// NAV ////*/
 nav {
-    background-color: var(--fondo-color-oscuro);
+    background-color: var(--color-4);
+    color: var(--blanco);
     position: sticky;
     top: -1px;
     z-index: 100;
@@ -79,13 +98,13 @@ nav ul {
 }
 
 nav ul li {
-    color: var(--texto-blanco);
+    color: var(--blanco);
     padding: 3px;
     margin: 0 3px;
 }
 
 nav ul li:hover {
-    color: var(--texto-color-brillante);
+    color: var(--color-3);
 }
 
 /*//// MAIN ////*/
@@ -112,9 +131,10 @@ article p {
 
 /*//// FOOTER ////*/
 footer {
-    background-color: var(--fondo-gris);
-    color: var(--texto-gris-oscuro);
+    border-top: 2px solid var(--color-4);
+    color: var(--gris-oscuro);
     padding: 60px 40px;
+    margin-top: 60px;
     text-align: center;
 }
 

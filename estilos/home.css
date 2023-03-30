@@ -1,12 +1,11 @@
 /*//// HEADER ////*/
 header {
-    background-color: var(--fondo-color-claro);
     height: 50vh;
 }
 
 /*//// MAIN (HOME) ////*/
 .section-1 article h2 {
-    color: var(--texto-color-oscuro);
+    color: var(--color-2);
 }
 
 .section-1 .cont-texto-foto {
@@ -41,11 +40,12 @@ header {
 }
 
 .card {
+    background-image: var(--grad-card);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 1px 6px #505050;
+    box-shadow: 0 1px 6px black;
 }
 
-.card p {
-    color: var(--texto-color-oscuro);
+.card h2 {
+    color: var(--color-2);
 }
