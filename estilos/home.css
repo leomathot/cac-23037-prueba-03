@@ -43,5 +43,10 @@ header {
 }
 
 .card h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.card:hover {
+    box-shadow: 0 1px 10px var(--color-3);
+    text-shadow: -5px 7px var(--color-2);
 }
