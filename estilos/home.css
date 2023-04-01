@@ -33,6 +33,9 @@ header .python {
 
 header .fs {
     display: inline-block;
+    background-color: var(--selection-background);
+    transform-origin: 100% 0%;
+    transform: rotate(-5deg);
 }
 
 /*//// MAIN (HOME) ////*/
