@@ -178,8 +178,6 @@ footer .footer-links {
     flex: 200px;
     margin-top: 10px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     align-content: start;
     justify-content: center;
     font-size: 1.3rem;
@@ -194,8 +192,8 @@ footer .footer-links a:hover {
     color: var(--color-4);
 }
 
-/*//// PUNTO DE CORTE 500PX ////*/
-@media (max-width: 500px) {
+/*//// PUNTO DE CORTE 600PX ////*/
+@media (max-width: 600px) {
     nav {
         justify-content: center;
     }
@@ -207,12 +205,15 @@ footer .footer-links a:hover {
     }
 }
 
-/*//// PUNTO DE CORTE 300PX ////*/
-@media (max-width: 300px) {
+/*//// PUNTO DE CORTE 360PX ////*/
+@media (max-width: 360px) {
     section {
         padding: 20px 10px;
     }
     footer {
         padding: 60px 10px;
+    }
+    footer .footer-links a {
+        padding: 4px 6px;
     }
 }
