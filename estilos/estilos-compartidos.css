@@ -136,7 +136,7 @@ h1, h2, h3 {
 }
 
 .card {
-    flex: 100px;
+    flex: 300px;
     background-image: repeating-linear-gradient(
         -45deg,
         rgb(255, 0, 0, 0.03),
@@ -186,7 +186,7 @@ footer .footer-links {
     margin-top: 10px;
     display: flex;
     align-content: start;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 1.3rem;
 }
 
