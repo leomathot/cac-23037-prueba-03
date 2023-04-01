@@ -1,6 +1,38 @@
 /*//// HEADER ////*/
 header {
-    height: 50vh;
+    min-height: 50vh;
+    padding: 50px 20px;
+    font-family: 'Carter One', 'Poppins', sans-serif;
+    font-size: 3rem;
+    text-shadow: -4px 4px var(--negro), 4px -4px var(--color-3);
+    color: var(--blanco);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-image: url(../imagenes/patron.png); */
+    background-image: repeating-linear-gradient(
+        -45deg,
+        rgb(255, 0, 0, 0.03),
+        rgb(255, 0, 0, 0.03) 20px,
+        transparent 20px,
+        transparent 40px
+    );
+}
+
+header .num {
+    color: var(--color-2);
+    font-size: 3.5rem;
+}
+
+header .python {
+    color: var(--color-1);
+    font-size: 4rem;
+    transform: translateY(-25px);
+}
+
+header .fs {
+    display: inline-block;
 }
 
 /*//// MAIN (HOME) ////*/
@@ -35,18 +67,27 @@ header {
 }
 
 .card {
-    background-image: var(--grad-card);
+    background-image: repeating-linear-gradient(
+        -45deg,
+        rgb(255, 0, 0, 0.03),
+        rgb(255, 0, 0, 0.03) 20px,
+        transparent 20px,
+        transparent 40px
+    );
     text-align: center;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 1px 6px black;
+    box-shadow: 0 1px 12px -4px black;
+    --h2-card: var(--blanco);
+}
+
+.card:hover  {
+    --h2-card: var(--color-1);
 }
 
 .card h2 {
-    font-size: 1.4rem;
-}
-
-.card:hover {
-    box-shadow: 0 1px 10px var(--color-3);
-    text-shadow: -5px 7px var(--color-2);
+    color: var(--h2-card);
+    font-family: 'Carter One', 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-shadow: -4px 4px var(--negro), 3px -3px var(--color-3);
 }

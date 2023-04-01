@@ -5,10 +5,10 @@
 }
 
 :root {
-    --color-1: #ffd19d;
+    --color-1: #ffd4a3;
     --color-2: #ffc4d1;
-    --color-3: #e41363;
-    --color-4: #c92f00;
+    --color-3: #ce4495;
+    --color-4: #ee4d31;
 
     --blanco: #fbfbfb;
     --negro: #202020;
@@ -21,14 +21,7 @@
         #ffffff
     );
 
-    --grad-card: linear-gradient(
-        rgba(255, 100, 0, 0.07), 
-        transparent 20%,
-        transparent 80%,
-        rgba(255, 30, 0, 0.17) 100%
-    );
-
-    --selection-background: #bd5f12;
+    --selection-background: #da7391;
     --selection-color: white;
 }
 
@@ -107,7 +100,7 @@ nav ul a {
 }
 
 nav ul a:hover {
-    background-color: var(--color-3);
+    background-color: #3c191940;
 }
 
 /*//// MAIN ////*/
