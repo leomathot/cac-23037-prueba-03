@@ -135,8 +135,11 @@ h1, h2, h3 {
     column-gap: 20px;
 }
 
-.card {
+.doble .card {
     flex: 300px;
+}
+
+.card {
     background-image: repeating-linear-gradient(
         -45deg,
         rgb(255, 0, 0, 0.03),
