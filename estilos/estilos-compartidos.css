@@ -186,6 +186,7 @@ footer .footer-links {
 footer .footer-links a {
     color: var(--negro);
     padding: 4px 8px;
+    height: fit-content;
 }
 
 footer .footer-links a:hover {
