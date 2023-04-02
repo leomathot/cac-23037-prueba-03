@@ -32,10 +32,23 @@ header .python {
 }
 
 header .fs {
+    position: relative;
     display: inline-block;
+    transform-origin: 50% 50%;
+    transform: rotate(-8deg);
+}
+
+header .fs::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 0;
+    left: 15px;
+    z-index: -1;
     background-color: var(--selection-background);
-    transform-origin: 100% 0%;
-    transform: rotate(-5deg);
+    transform-origin: 50% 50%;
+    transform: rotate(12deg) skew(-40deg);
 }
 
 /*//// MAIN (HOME) ////*/
