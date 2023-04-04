@@ -5,23 +5,18 @@
 }
 
 :root {
-    --color-1: #ffd8a0;
+    --color-1: #fff890;
     --color-2: #ffb0d0;
-    --color-3: #d04898;
-    --color-4: #e84830;
+    --color-3: #b43b82;
+    --color-4: #e8304f;
 
-    --blanco: #fbfbfb;
+    --blanco: #fcfcfc;
     --negro: #202020;
 
     --gris-claro: #c0c0c0;
     --gris-oscuro: #505050;
 
-    --grad-fondo: linear-gradient(
-        var(--color-2), 
-        #fcfcfc 30%
-    );
-
-    --selection-background: #e07090;
+    --selection-background: #ce5286;
     --selection-color: white;
 }
 
@@ -55,17 +50,8 @@ html {
     background: #686868;
 }
 
-.fondo {
-    background-image: var(--grad-fondo);
-    position: fixed;
-    top: -10%;
-    left: 0;
-    z-index: -10;
-    width: 100%;
-    height: 120%;
-}
-
 body {
+    background-color: var(--blanco);
     color: var(--negro);
     font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
@@ -139,17 +125,14 @@ h1, h2, h3 {
 }
 
 .card {
-    background-image: linear-gradient(
-        transparent 20%, 
-        rgba(255, 0, 200, 0.1) 100%
-    );
+    background-color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 15px 10px;
     border-radius: 10px;
-    box-shadow: 0 1px 12px -4px black;
+    box-shadow: 0 1px 20px -5px gray;
     --font-w: 100;
 }
 
@@ -159,8 +142,6 @@ h1, h2, h3 {
 
 .card h2 {
     color: var(--blanco);
-    /* background-color: var(--selection-background); */
-    width: fit-content;
     transform-origin: 50% 50%;
     transform: rotate(-4deg);
     font-family: 'Carter One', 'Poppins', sans-serif;
@@ -183,7 +164,7 @@ h1, h2, h3 {
 
 .card p {
     color: var(--color-4);
-    font-weight: var(--font-w);
+    font-weight: bold;
 }
 
 /*//// FOOTER ////*/
