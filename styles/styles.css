@@ -1,3 +1,8 @@
+/* 
+font-family: 'Alegreya Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -5,19 +10,20 @@
 }
 
 :root {
-    --color-1: #fff890;
-    --color-2: #ffb0d0;
-    --color-3: #b43b82;
-    --color-4: #e8304f;
+    --color-1: #fffce8;
+    --color-2: #f8c89b;
+    --color-3: #df7811;
+    --color-4: #bb2727;
+    --color-5: #561a1a;
 
-    --blanco: #fcfcfc;
-    --negro: #202020;
+    --white: #fcfcfc;
+    --black: #202020;
 
-    --gris-claro: #c0c0c0;
-    --gris-oscuro: #505050;
+    --light-gray: #c0c0c0;
+    --dark-gray: #505050;
 
-    --selection-background: #ce5286;
-    --selection-color: white;
+    --selection-background: #2b2121;
+    --selection-color: #fe6161;
 }
 
 ::-moz-selection { /* Codigo para Firefox */
@@ -51,72 +57,46 @@ html {
 }
 
 body {
-    background-color: var(--blanco);
-    color: var(--negro);
+    background-color: var(--color-1);
+    color: var(--black);
     font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
 }
 
-/*//// HEADER ////*/
+/*//// Header ////*/
 header {
-    min-height: 50vh;
-    padding: 50px 20px;
-    font-family: 'Carter One', 'Poppins', sans-serif;
-    font-size: 3rem;
-    text-shadow: -4px 4px var(--negro), 4px -4px var(--color-3);
-    color: var(--blanco);
-    text-align: center;
+    min-height: 200px;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* background-image: url(../imagenes/patron.png); */
-    background-image: 
-        repeating-linear-gradient(
-        -45deg,
-        rgb(255, 0, 0, 0.04),
-        rgb(255, 0, 0, 0.04) 20px,
-        transparent 20px,
-        transparent 40px),
-        linear-gradient(
-        var(--color-2),
-        var(--color-1));
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 5px;
+    row-gap: 1px;
+    background-image: url(../images/planetas.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-header .num {
-    color: var(--color-2);
-    font-size: 3.5rem;
+header div:nth-child(2) {
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
 }
 
-header .python {
-    color: var(--color-1);
-    font-size: 4rem;
-    transform: translateY(-25px);
+h1 {
+    border: 3px solid red;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white);
 }
 
-header .fs {
-    position: relative;
-    display: inline-block;
-    transform-origin: 50% 50%;
-    transform: rotate(-8deg);
-}
-
-header .fs::before {
-    content: '';
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    bottom: 0;
-    left: 15px;
-    z-index: -1;
-    background-color: var(--selection-background);
-    transform-origin: 50% 50%;
-    transform: rotate(12deg) skew(-40deg);
-}
-
-/*//// NAV ////*/
+/*//// Nav ////*/
 nav {
     background-color: var(--color-4);
-    color: var(--blanco);
+    color: var(--white);
     position: sticky;
     top: -1px;
     z-index: 100;
@@ -133,7 +113,7 @@ nav ul {
 
 a {
     text-decoration: none;
-    color: var(--blanco);
+    color: var(--white);
 }
 
 nav ul a {
@@ -153,22 +133,23 @@ section {
     padding: 30px;
 }
 
-article {
+main {
     width: 100%;
     max-width: 700px;
-    margin: 20px 0;
+    margin: 20px auto;
 }
 
-article p {
-    margin-top: 10px;
+h2 {
+    color: var(--color-5);
 }
 
-h1, h2, h3 {
+h3 {
     color: var(--color-3);
     margin-bottom: 15px;
+    margin-top: 30px;
 }
 
-.doble {
+.two {
     width: 100%;
     max-width: 700px;
     display: flex;
@@ -176,51 +157,27 @@ h1, h2, h3 {
     column-gap: 20px;
 }
 
-.doble .card {
+.two .card {
     flex: 300px;
 }
 
 .card {
-    background-color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 15px 10px;
+    background-color: var(--white);
     border-radius: 10px;
     box-shadow: 0 1px 20px -5px gray;
-    --font-w: 100;
+    color: var(--color-5);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    text-align: center;
 }
 
-.card:hover  {
-    --font-w: bold;
-}
-
-.card h2 {
-    color: var(--blanco);
-    transform-origin: 50% 50%;
-    transform: rotate(-4deg);
-    font-family: 'Carter One', 'Poppins', sans-serif;
-    font-size: 2rem;
-    text-shadow: -4px 4px var(--negro), 4px -4px var(--color-3);
-}
-
-.card h2::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    right: -10px;
-    bottom: 0;
-    left: -10px;
-    z-index: -1;
-    background-color: var(--selection-background);
-    transform-origin: 50% 50%;
-    transform: rotate(8deg) skew(-40deg);
-}
-
-.card p {
+.card h3 {
     color: var(--color-4);
-    font-weight: bold;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2rem;
+    margin-top: 0;
 }
 
 .section-1 .cont-texto-foto {
@@ -254,7 +211,7 @@ h1, h2, h3 {
 /*//// FOOTER ////*/
 footer {
     border-top: 2px solid var(--color-4);
-    color: var(--gris-oscuro);
+    color: var(--dark-gray);
     padding: 60px 40px;
     margin-top: 50px;
     display: flex;
@@ -275,12 +232,13 @@ footer .footer-links {
     margin-top: 10px;
     display: flex;
     align-content: start;
-    justify-content: space-between;
-    font-size: 1.3rem;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2rem;
 }
 
 footer .footer-links a {
-    color: var(--negro);
+    color: var(--black);
     padding: 4px 8px;
     height: fit-content;
 }
