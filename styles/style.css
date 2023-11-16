@@ -11,8 +11,8 @@ font-family: 'Poppins', sans-serif;
 
 :root {
     --color-1: #fffce8;
-    --color-2: #f8c89b;
-    --color-3: #df7811;
+    --color-2: #fe6161;
+    --color-3: #fc8a17;
     --color-4: #bb2727;
     --color-5: #561a1a;
 
@@ -23,14 +23,15 @@ font-family: 'Poppins', sans-serif;
     --dark-gray: #505050;
 
     --selection-background: #2b2121;
-    --selection-color: #fe6161;
+    --selection-color: #d6a2a2;
 }
 
-::-moz-selection { /* Codigo para Firefox */
+::-moz-selection {
+    /* Codigo para Firefox */
     background: var(--selection-background);
     color: var(--selection-color);
 }
-  
+
 ::selection {
     background: var(--selection-background);
     color: var(--selection-color);
@@ -43,15 +44,15 @@ html {
 ::-webkit-scrollbar {
     width: 15px;
 }
-  
+
 ::-webkit-scrollbar-track {
     background: #101010;
 }
-  
+
 ::-webkit-scrollbar-thumb {
     background: #484848;
 }
-  
+
 ::-webkit-scrollbar-thumb:hover {
     background: #686868;
 }
@@ -134,20 +135,30 @@ section {
 
 main {
     width: 95%;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 h2 {
     color: var(--color-5);
     font-size: 2em;
+    margin-bottom: 20px;
     margin-top: 25px;
 }
 
 h3 {
-    color: var(--color-3);
+    color: var(--color-2);
     margin-bottom: 15px;
     margin-top: 30px;
+    font-weight: 600;
+    background:
+        linear-gradient(
+            135deg,
+            black,
+            black 50%,
+            transparent 80%,
+            transparent);
+    padding: 5px 5px 5px 15px;
 }
 
 .two {
@@ -165,18 +176,22 @@ h3 {
 
 .card {
     align-items: center;
-    background-color: var(--white);
-    border-radius: 10px;
-    box-shadow: 0 1px 20px -5px gray;
-    color: var(--color-5);
+    background: 
+    repeating-linear-gradient(
+        135deg,
+        black,
+        black 50%,
+        var(--color-5));
+    box-shadow: 0 1px 10px -3px gray;
+    color: var(--color-1);
     display: flex;
     flex-direction: column;
-    padding: 20px 10px;
+    padding: 10px 10px 20px 10px;
     text-align: center;
 }
 
-.card h3 {
-    color: var(--color-4);
+.card h4 {
+    color: var(--color-3);
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 2rem;
     margin-top: 0;
@@ -208,6 +223,37 @@ h3 {
 
 .section-1 .cont-texto-foto .cont-texto p:first-of-type {
     margin: 0;
+}
+
+.stripes {
+    background:
+        repeating-linear-gradient(
+            135deg,
+            transparent,
+            var(--color-1) 60%,
+            var(--color-1) 100%),
+        repeating-linear-gradient(135deg,
+            var(--color-5),
+            var(--color-5) 30px,
+            transparent 30px,
+            transparent 35px);
+    height: 40px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.line-green {
+    background: #43bd43;
+    height: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.line-red {
+    background: #e52857;
+    height: 10px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 /*//// FOOTER ////*/
@@ -254,6 +300,7 @@ footer .footer-links a:hover {
     nav {
         justify-content: center;
     }
+
     footer {
         padding: 60px 20px;
     }
@@ -264,6 +311,7 @@ footer .footer-links a:hover {
     footer {
         padding: 60px 10px;
     }
+
     footer .footer-links a {
         padding: 4px 6px;
     }
