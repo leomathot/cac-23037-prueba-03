@@ -234,6 +234,20 @@ p:last-child {
     margin-top: 0;
 }
 
+.box i {
+    font-size: 1.6em;
+    margin: 10px;position: relative;
+    top: 2px;
+}
+
+.green i, .green h4 {
+    color: #43bd43;
+}
+
+.red i, .red h4 {
+    color: #e52857;
+}
+
 .stripes {
     background: repeating-linear-gradient(
         135deg,
@@ -245,20 +259,6 @@ p:last-child {
     margin: 50px 0 10px 0;
     opacity: 0.05;
     width: 100%;
-}
-
-.box i {
-    font-size: 1.6em;
-    margin: 10px;position: relative;
-    top: 2px;
-}
-
-.box i, .green h4 {
-    color: #43bd43;
-}
-
-.red i, .red h4 {
-    color: #e52857;
 }
 
 /* Footer */
