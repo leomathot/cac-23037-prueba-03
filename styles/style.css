@@ -12,7 +12,7 @@ font-family: 'Poppins', sans-serif;
 :root {
     --color-1: #fffce8;
     --color-2: #fe6161;
-    --color-3: #fc8a17;
+    --color-3: #f2cda8;
     --color-4: #bb2727;
     --color-5: #561a1a;
 
@@ -82,26 +82,24 @@ header {
 
 h1 {
     color: var(--white);
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
+    opacity: 0.85;
+    -webkit-text-stroke: 3px var(--white);
+    -webkit-text-fill-color: transparent;
 }
 
 /*//// Nav ////*/
 nav {
     background-color: var(--color-4);
     color: var(--white);
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 4px;
     position: sticky;
     top: -1px;
     z-index: 100;
-    display: flex;
-    padding: 4px;
-    justify-content: right;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0 10px;
 }
 
 a {
@@ -109,13 +107,17 @@ a {
     color: var(--white);
 }
 
-nav ul a {
+nav a {
     padding: 3px;
     margin: 0 3px;
 }
 
 nav ul a:hover {
     background-color: #3c191940;
+}
+
+nav i {
+    font-size: 0.85em;
 }
 
 /*//// MAIN ////*/
@@ -134,7 +136,7 @@ section {
 
 h2 {
     color: var(--color-5);
-    font-size: 2em;
+    font-size: 1.3em;
     margin-bottom: 20px;
     margin-top: 25px;
 }
@@ -163,11 +165,11 @@ h3 {
     width: 100%;
 }
 
-.two .card {
+.two .box {
     flex: 270px;
 }
 
-.card {
+.box {
     align-items: center;
     background: 
     repeating-linear-gradient(
@@ -183,7 +185,7 @@ h3 {
     text-align: center;
 }
 
-.card h4 {
+.box h4 {
     color: var(--color-3);
     font-size: 2rem;
     margin-top: 0;
@@ -286,24 +288,4 @@ footer .footer-links a:hover {
     color: var(--color-4);
 }
 
-/*//// PUNTO DE CORTE 600PX ////*/
-@media (max-width: 600px) {
-    nav {
-        justify-content: center;
-    }
-
-    footer {
-        padding: 60px 20px;
-    }
-}
-
-/*//// PUNTO DE CORTE 360PX ////*/
-@media (max-width: 360px) {
-    footer {
-        padding: 60px 10px;
-    }
-
-    footer .footer-links a {
-        padding: 4px 6px;
-    }
-}
+/*//// Media queries ////*/
