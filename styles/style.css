@@ -66,30 +66,22 @@ body {
 
 /*//// Header ////*/
 header {
-    min-height: 200px;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    column-gap: 5px;
-    row-gap: 1px;
     background-image: url(../images/planetas.jpg);
     background-size: cover;
     background-position: center;
-}
-
-header div:nth-child(2) {
-    border: 3px solid red;
+    column-gap: 5px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: 200px;
+    min-height: 200px;
+    padding: 20px;
+    row-gap: 1px;
+    width: 100%;
 }
 
 h1 {
-    border: 3px solid red;
     color: var(--white);
-    font-family: 'Alegreya Sans', sans-serif;
     font-size: 3rem;
     font-weight: 700;
 }
@@ -127,16 +119,17 @@ nav ul a:hover {
 }
 
 /*//// MAIN ////*/
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 main {
     width: 95%;
     max-width: 800px;
     margin: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
@@ -156,7 +149,7 @@ h3 {
             135deg,
             black,
             black 50%,
-            transparent 80%,
+            transparent 90%,
             transparent);
     padding: 5px 5px 5px 15px;
 }
@@ -192,36 +185,35 @@ h3 {
 
 .card h4 {
     color: var(--color-3);
-    font-family: 'Alegreya Sans', sans-serif;
     font-size: 2rem;
     margin-top: 0;
 }
 
-.section-1 .cont-texto-foto {
+.section-1 .text-photo-cont {
     display: flex;
     flex-wrap: wrap;
     column-gap: 10px;
     row-gap: 10px;
 }
 
-.section-1 .cont-texto-foto .cont-foto {
+.section-1 .text-photo-cont .photo-cont {
     background-color: black;
     flex: 250px;
     border-radius: 10px;
 }
 
-.section-1 .cont-texto-foto .cont-foto img {
+.section-1 .text-photo-cont .photo-cont img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.section-1 .cont-texto-foto .cont-texto {
+.section-1 .text-photo-cont .text-cont {
     flex: 250px;
 }
 
-.section-1 .cont-texto-foto .cont-texto p:first-of-type {
+.section-1 .text-photo-cont .text-cont p:first-of-type {
     margin: 0;
 }
 
@@ -230,7 +222,7 @@ h3 {
         repeating-linear-gradient(
             135deg,
             transparent,
-            var(--color-1) 60%,
+            var(--color-1) 70%,
             var(--color-1) 100%),
         repeating-linear-gradient(135deg,
             var(--color-5),
@@ -242,18 +234,17 @@ h3 {
     width: 100%;
 }
 
-.line-green {
-    background: #43bd43;
-    height: 10px;
-    margin-bottom: 20px;
-    width: 100%;
+.green i, .red i {
+    font-size: 1.8em;
+    margin: 10px 0;
 }
 
-.line-red {
-    background: #e52857;
-    height: 10px;
-    margin-bottom: 20px;
-    width: 100%;
+.green i {
+    color: #43bd43;
+}
+
+.red i {
+    color: #e52857;
 }
 
 /*//// FOOTER ////*/
