@@ -1,7 +1,3 @@
-/* 
-font-family: 'Alegreya Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
 
 * {
     margin: 0;
@@ -22,8 +18,8 @@ font-family: 'Poppins', sans-serif;
     --light-gray: #c0c0c0;
     --dark-gray: #505050;
 
-    --selection-background: #2b2121;
-    --selection-color: #d6a2a2;
+    --selection-background: #433131;
+    --selection-color: #e1bebe;
 }
 
 ::-moz-selection {
@@ -67,13 +63,13 @@ body {
 /*//// Header ////*/
 header {
     align-items: center;
-    background-image: url(../images/planetas.jpg);
+    background-image: url(../images/planets.jpg);
     background-size: cover;
     background-position: center;
     column-gap: 5px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     min-height: 200px;
     padding: 20px;
     row-gap: 1px;
@@ -81,11 +77,20 @@ header {
 }
 
 h1 {
+    background-color: rgba(0,0,0,0.7);
     color: var(--white);
+    border-radius: 10px;
     font-size: 3.5rem;
     font-weight: 700;
     opacity: 0.85;
+    padding: 8px 20px;
     -webkit-text-stroke: 3px var(--white);
+    -webkit-text-fill-color: transparent;
+}
+
+header span {
+    font-size: 3.6rem;
+    -webkit-text-stroke: 3px var(--color-2);
     -webkit-text-fill-color: transparent;
 }
 
@@ -120,11 +125,11 @@ nav i {
     font-size: 0.85em;
 }
 
-/*//// MAIN ////*/
+/*//// Main ////*/
 
 main {
     width: 95%;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -132,6 +137,35 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.photo-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.photo-text > div:nth-child(1) {
+    border: 2px solid red;
+    flex: 300px;
+    flex-grow: 1;
+    max-height: 450px;
+}
+
+.photo-text > div:nth-child(2) {
+    border: 2px solid red;
+    flex: 350px;
+    flex-grow: 2;
+}
+
+.photo-text img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 h2 {
@@ -144,7 +178,7 @@ h2 {
 h3 {
     color: var(--color-2);
     margin-bottom: 15px;
-    margin-top: 30px;
+    margin-top: 20px;
     font-weight: 600;
     background:
         linear-gradient(
@@ -156,7 +190,11 @@ h3 {
     padding: 5px 5px 5px 15px;
 }
 
-.two {
+p { 
+    margin-bottom: 10px;
+}
+
+.boxes {
     column-gap: 20px;
     display: grid;
     grid-template-columns: 1fr;
@@ -178,7 +216,6 @@ h3 {
     display: flex;
     flex-direction: column;
     padding: 10px 10px 20px 10px;
-    text-align: center;
 }
 
 .box h4 {
@@ -187,58 +224,26 @@ h3 {
     margin-top: 0;
 }
 
-.section-1 .text-photo-cont {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 10px;
-    row-gap: 10px;
-}
-
-.section-1 .text-photo-cont .photo-cont {
-    background-color: black;
-    flex: 250px;
-    border-radius: 10px;
-}
-
-.section-1 .text-photo-cont .photo-cont img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.section-1 .text-photo-cont .text-cont {
-    flex: 250px;
-}
-
-.section-1 .text-photo-cont .text-cont p:first-of-type {
-    margin: 0;
-}
-
 .stripes {
-    background:
-        /* repeating-linear-gradient(
-            135deg,
-            transparent,
-            var(--color-1) 70%,
-            var(--color-1) 100%), */
-        repeating-linear-gradient(135deg,
-            var(--color-5),
-            var(--color-5) 30px,
-            transparent 30px,
-            transparent 35px);
+    background: repeating-linear-gradient(
+        135deg,
+        var(--color-5),
+        var(--color-5) 30px,
+        transparent 30px,
+        transparent 35px);
     height: 60px;
-    margin: 20px 0;
-    opacity: 0.1;
+    margin: 50px 0 10px 0;
+    opacity: 0.05;
     width: 100%;
 }
 
-.green i, .red i {
-    font-size: 1.8em;
-    margin: 10px 0;
+.box i {
+    font-size: 1.2em;
+    margin: 10px;position: relative;
+    top: 2px;
 }
 
-.green i, .green h4 {
+.box i, .green h4 {
     color: #43bd43;
 }
 
@@ -246,7 +251,7 @@ h3 {
     color: #e52857;
 }
 
-/*//// FOOTER ////*/
+/* Footer */
 footer {
     border-top: 2px solid var(--color-4);
     color: var(--dark-gray);
@@ -285,10 +290,10 @@ footer .footer-links a:hover {
     color: var(--color-4);
 }
 
-/*//// Media queries ////*/
+/* Media queries */
 
 @media screen and (min-width: 520px) {
-    .two {
+    .boxes {
         grid-template-columns: 1fr 1fr;
     }
 }
