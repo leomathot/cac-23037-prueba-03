@@ -94,7 +94,7 @@ header span {
     -webkit-text-fill-color: transparent;
 }
 
-/*//// Nav ////*/
+/* Nav */
 nav {
     background-color: var(--color-4);
     color: var(--white);
@@ -125,7 +125,7 @@ nav i {
     font-size: 0.85em;
 }
 
-/*//// Main ////*/
+/* Main */
 
 main {
     width: 95%;
@@ -133,10 +133,11 @@ main {
     margin: 0 auto;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+h2 {
+    color: var(--color-5);
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    margin-top: 25px;
 }
 
 img {
@@ -150,16 +151,15 @@ img {
 }
 
 .photo-text > div:nth-child(1) {
-    border: 2px solid red;
-    flex: 300px;
-    flex-grow: 1;
+    position: relative;
+    border-bottom: 15px solid var(--color-4);
+    flex: 1 1 200px;
+    height: auto;
     max-height: 450px;
 }
 
 .photo-text > div:nth-child(2) {
-    border: 2px solid red;
-    flex: 350px;
-    flex-grow: 2;
+    flex: 1 1 250px;
 }
 
 .photo-text img {
@@ -168,11 +168,17 @@ img {
     object-fit: cover;
 }
 
-h2 {
-    color: var(--color-5);
-    font-size: 1.3em;
-    margin-bottom: 20px;
-    margin-top: 25px;
+.glass {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        transparent 10%,
+        transparent 90%,
+        rgba(0, 0, 0, 0.6));
+    height: 100%;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
 }
 
 h3 {
@@ -192,6 +198,10 @@ h3 {
 
 p { 
     margin-bottom: 10px;
+}
+
+p:last-child {
+    margin-bottom: 0;
 }
 
 .boxes {
@@ -238,7 +248,7 @@ p {
 }
 
 .box i {
-    font-size: 1.2em;
+    font-size: 1.6em;
     margin: 10px;position: relative;
     top: 2px;
 }
