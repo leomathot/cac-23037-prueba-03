@@ -6,7 +6,7 @@
 }
 
 :root {
-    --color-1: #fffce8;
+    --color-1: #fdfdf8;
     --color-2: #fe6161;
     --color-3: #f2cda8;
     --color-4: #bb2727;
@@ -22,8 +22,8 @@
     --selection-color: #e1bebe;
 }
 
+/* for Firefox */
 ::-moz-selection {
-    /* Codigo para Firefox */
     background: var(--selection-background);
     color: var(--selection-color);
 }
@@ -56,24 +56,26 @@ html {
 body {
     background-color: var(--color-1);
     color: var(--black);
-    font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
+    font-size: 1em;
 }
 
-/*//// Header ////*/
+/* Header */
+
 header {
-    align-items: center;
     background-image: url(../images/planets.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.header-cont {
+    align-items: center;
     column-gap: 5px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    min-height: 200px;
-    padding: 20px;
-    row-gap: 1px;
-    width: 100%;
 }
 
 h1 {
@@ -95,30 +97,36 @@ header span {
 }
 
 /* Nav */
+
 nav {
     background-color: var(--color-4);
     color: var(--white);
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    padding: 4px;
     position: sticky;
     top: -1px;
     z-index: 100;
 }
 
+.nav-cont {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 4px;
+}
+
 a {
     text-decoration: none;
-    color: var(--white);
 }
 
 nav a {
-    padding: 3px;
-    margin: 0 3px;
+    border-radius: 3px;
+    color: var(--white);
+    margin: 3px;
+    padding: 1px 6px;
 }
 
-nav ul a:hover {
-    background-color: #3c191940;
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--color-2);
 }
 
 nav i {
@@ -127,7 +135,7 @@ nav i {
 
 /* Main */
 
-main {
+.header-cont, .nav-cont, main {
     width: 95%;
     max-width: 900px;
     margin: 0 auto;
@@ -135,13 +143,29 @@ main {
 
 h2 {
     color: var(--color-5);
-    font-size: 1.3em;
+    border-bottom: 3px solid var(--color-4);
+    font-size: 1.8em;
     margin-bottom: 20px;
     margin-top: 25px;
+    padding-bottom: 10px;
 }
 
 img {
     max-width: 100%;
+}
+
+.author {
+    margin-bottom: 20px;
+}
+
+.author p {
+    color: #505050;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.author p:first-child {
+    font-weight: 600;
 }
 
 .photo-text {
@@ -150,22 +174,21 @@ img {
     gap: 15px;
 }
 
-.photo-text > div:nth-child(1) {
+.photo-cont {
     position: relative;
-    border-bottom: 15px solid var(--color-4);
-    flex: 1 1 200px;
-    height: auto;
-    max-height: 450px;
+    border-bottom: 10px solid var(--color-4);
+    flex: 250px;
+    max-height: 350px;
 }
 
-.photo-text > div:nth-child(2) {
-    flex: 1 1 250px;
+.text-cont {
+    flex: 250px;
 }
 
-.photo-text img {
-    width: 100%;
+.photo-cont img {
     height: 100%;
     object-fit: cover;
+    width: 100%;
 }
 
 .glass {
@@ -183,7 +206,7 @@ img {
 
 h3 {
     color: var(--color-2);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     margin-top: 20px;
     font-weight: 600;
     background:
@@ -191,6 +214,7 @@ h3 {
             135deg,
             black,
             black 50%,
+            var(--color-5) 60%,
             transparent 90%,
             transparent);
     padding: 5px 5px 5px 15px;
@@ -215,22 +239,19 @@ p:last-child {
 
 .box {
     align-items: center;
-    background: 
-    repeating-linear-gradient(
-        135deg,
-        black,
-        black 50%,
-        var(--color-5));
-    box-shadow: 0 1px 10px -3px gray;
-    color: var(--color-1);
+    background: var(--color-1);
+    box-shadow: 0 4px 10px -3px var(--color-5);
+    color: var(--color-5);
     display: flex;
     flex-direction: column;
+    font-weight: 600;
     padding: 10px 10px 20px 10px;
 }
 
 .box h4 {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     font-weight: 600;
+    margin-bottom: 10px;
     margin-top: 0;
 }
 
@@ -241,11 +262,16 @@ p:last-child {
 }
 
 .green i, .green h4 {
-    color: #43bd43;
+    color: #2fc22f;
 }
 
 .red i, .red h4 {
-    color: #e52857;
+    color: #fd295e;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
 }
 
 .stripes {
@@ -255,24 +281,37 @@ p:last-child {
         var(--color-5) 30px,
         transparent 30px,
         transparent 35px);
-    height: 60px;
-    margin: 50px 0 10px 0;
+    height: 30px;
+    margin: 20px 0 10px 0;
     opacity: 0.05;
     width: 100%;
+}
+
+.references p {
+    margin-left: 30px;
+    text-indent: -30px ;
+}
+
+.references a {
+    color: var(--color-4);
+}
+
+.references a:hover {
+    color: var(--color-2);
 }
 
 /* Footer */
 footer {
     border-top: 2px solid var(--color-4);
     color: var(--dark-gray);
-    padding: 60px 40px;
-    margin-top: 50px;
+    column-gap: 40px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 40px;
-    row-gap: 30px;
+    font-size: 0.9em;
     justify-content: center;
-    font-size: 1rem;
+    margin-top: 50px;
+    padding: 60px 40px;
+    row-gap: 30px;
 }
 
 footer .footer-text {
@@ -281,19 +320,16 @@ footer .footer-text {
 }
 
 footer .footer-links {
-    flex: 200px;
-    margin-top: 10px;
-    display: flex;
     align-content: start;
-    justify-content: center;
-    gap: 20px;
+    display: flex;
+    flex: 200px;
     font-size: 1.2rem;
+    gap: 20px;
+    justify-content: center;
 }
 
 footer .footer-links a {
     color: var(--black);
-    padding: 4px 8px;
-    height: fit-content;
 }
 
 footer .footer-links a:hover {
@@ -305,5 +341,20 @@ footer .footer-links a:hover {
 @media screen and (min-width: 520px) {
     .boxes {
         grid-template-columns: 1fr 1fr;
+    }
+    .stripes {
+        height: 45px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    body {
+        font-size: 1.1em;
+    }
+    .stripes {
+        height: 60px;
+    }
+    .intro .photo-cont {
+        flex: 400px;
     }
 }
