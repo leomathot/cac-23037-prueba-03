@@ -176,13 +176,13 @@ img {
 
 .photo-cont {
     position: relative;
-    border-bottom: 10px solid var(--color-4);
-    flex: 250px;
+    border-bottom: 6px solid var(--color-4);
+    flex: 300px;
     max-height: 350px;
 }
 
 .text-cont {
-    flex: 250px;
+    flex: 300px;
 }
 
 .photo-cont img {
@@ -355,6 +355,9 @@ footer .footer-links a:hover {
         height: 60px;
     }
     .intro .photo-cont {
-        flex: 400px;
+        flex: 350px;
+    }
+    .intro .text-cont {
+        flex: 250px;
     }
 }
