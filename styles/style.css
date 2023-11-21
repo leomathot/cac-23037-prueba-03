@@ -6,13 +6,12 @@
 }
 
 :root {
-    --color-1: #fdfdf8;
     --color-2: #fe6161;
-    --color-3: #f2cda8;
+    --color-3: #f8edc4;
     --color-4: #bb2727;
     --color-5: #561a1a;
 
-    --white: #fcfcfc;
+    --white: #fdfdfd;
     --black: #202020;
 
     --light-gray: #c0c0c0;
@@ -54,7 +53,7 @@ html {
 }
 
 body {
-    background-color: var(--color-1);
+    background-color: var(--white);
     color: var(--black);
     font-family: 'Poppins', sans-serif;
     font-size: 1em;
@@ -144,7 +143,7 @@ nav i {
 h2 {
     color: var(--color-5);
     border-bottom: 3px solid var(--color-4);
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-bottom: 20px;
     margin-top: 25px;
     padding-bottom: 10px;
@@ -205,7 +204,7 @@ img {
 h3 {
     color: var(--color-2);
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 60px;
     font-weight: 600;
     background:
         linear-gradient(
@@ -237,7 +236,7 @@ p:last-child {
 
 .box {
     align-items: center;
-    background: var(--color-1);
+    background: var(--white);
     box-shadow: 0 4px 10px -3px var(--color-5);
     color: var(--color-5);
     display: flex;
@@ -275,13 +274,13 @@ ul {
 .stripes {
     background: repeating-linear-gradient(
         135deg,
-        var(--color-5),
-        var(--color-5) 30px,
+        var(--color-3),
+        var(--color-3) 30px,
         transparent 30px,
         transparent 35px);
     height: 30px;
     margin: 20px 0 10px 0;
-    opacity: 0.05;
+    opacity: 0.2;
     width: 100%;
 }
 
