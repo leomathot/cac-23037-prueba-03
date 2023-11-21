@@ -6,7 +6,7 @@
 }
 
 :root {
-    --color-2: #fe6161;
+    --color-2: #ff6464;
     --color-3: #f8edc4;
     --color-4: #bb2727;
     --color-5: #561a1a;
@@ -277,20 +277,26 @@ p:last-child {
 
 ul {
     list-style: none;
+}
+
+.box ul {
     text-align: center;
 }
 
-.stripes {
-    background: repeating-linear-gradient(
-        135deg,
-        var(--color-3),
-        var(--color-3) 30px,
-        transparent 30px,
-        transparent 35px);
-    height: 30px;
-    margin: 20px 0 10px 0;
-    opacity: 0.2;
-    width: 100%;
+.specs ul {
+    background: var(--white);
+    box-shadow: 0 4px 10px -3px var(--color-5);
+    margin-bottom: 15px;
+    padding: 20px 10px 20px 25px;
+}
+
+.specs li {
+    list-style: square;
+    font-size: 0.9em;
+}
+
+.specs li b {
+    font-weight: 600;
 }
 
 .references p {
