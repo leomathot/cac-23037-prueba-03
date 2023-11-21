@@ -141,8 +141,17 @@ nav i {
 }
 
 h2 {
+    border-bottom: 6px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+        135deg,
+        black,
+        black 10%,
+        var(--color-4) 40%,
+        var(--color-4) 60%,
+        var(--color-2) 80%,
+        var(--color-4));
     color: var(--color-5);
-    border-bottom: 3px solid var(--color-4);
     font-size: 1.5em;
     margin-bottom: 20px;
     margin-top: 25px;
@@ -202,19 +211,20 @@ img {
 }
 
 h3 {
-    color: var(--color-2);
+    border-bottom: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+        135deg,
+        black,
+        black 10%,
+        var(--color-4) 40%,
+        var(--color-4) 60%,
+        var(--color-2) 80%,
+        var(--color-4));
+    color: var(--color-4);
     margin-bottom: 20px;
     margin-top: 60px;
     font-weight: 600;
-    background:
-        linear-gradient(
-            135deg,
-            black,
-            black 50%,
-            var(--color-5) 60%,
-            transparent 90%,
-            transparent);
-    padding: 5px 5px 5px 15px;
 }
 
 p { 
