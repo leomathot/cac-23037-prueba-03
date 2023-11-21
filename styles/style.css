@@ -253,19 +253,25 @@ p:last-child {
     display: flex;
     flex-direction: column;
     font-weight: 600;
-    padding: 30px 8px 15px 10%;
+    padding: 30px 10px 15px 10%;
+}
+
+.box span {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
 }
 
 .box h4 {
     font-size: 1.1rem;
     font-weight: 600;
-    margin-bottom: 10px;
     margin-top: 0;
 }
 
 .box i {
     font-size: 1.6em;
-    margin-bottom: 10px;
+    position: relative;
+    top: -2px;
 }
 
 ul {
