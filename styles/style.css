@@ -367,6 +367,9 @@ footer .footer-links a:hover {
     body {
         font-size: 1.1em;
     }
+    h2 {
+        margin-top: 40px;
+    }
     .intro .photo-cont {
         flex: 350px;
     }
