@@ -187,7 +187,6 @@ img {
 
 .photo-cont {
     position: relative;
-    border-bottom: 8px solid var(--color-3);
     flex: 300px;
     max-height: 350px;
 }
@@ -200,17 +199,6 @@ img {
     height: 100%;
     object-fit: cover;
     width: 100%;
-}
-
-.photo-shadow {
-    background: linear-gradient(
-        transparent 80%,
-        rgba(0, 0, 0, 0.6));
-    height: 100%;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: 0;
 }
 
 h3 {
