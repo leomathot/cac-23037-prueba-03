@@ -241,7 +241,7 @@ p:last-child {
     display: flex;
     flex-direction: column;
     font-weight: 600;
-    padding: 30px 10px 15px 10%;
+    padding: 30px 5% 15px 5%;
 }
 
 .box span {
@@ -253,13 +253,12 @@ p:last-child {
 .box h4 {
     font-size: 1.1rem;
     font-weight: 600;
-    margin-top: 0;
 }
 
 .box i {
     font-size: 1.6em;
     position: relative;
-    top: -2px;
+    top: -1px;
 }
 
 ul {
@@ -378,6 +377,9 @@ footer .footer-links a:hover {
     }
     .boxes {
         gap: 15px;
+    }
+    .box {
+        padding: 30px 20% 15px 20%;
     }
     .specs ul {
         padding: 45px 40px;
