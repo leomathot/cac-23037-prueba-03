@@ -333,7 +333,7 @@ ul {
 
 /* Footer */
 footer {
-    border-top: 2px solid var(--color-4);
+    background: #f4f4f4;
     color: var(--dark-gray);
     column-gap: 40px;
     display: flex;
@@ -341,7 +341,7 @@ footer {
     font-size: 0.9em;
     justify-content: center;
     margin-top: 50px;
-    padding: 60px 40px;
+    padding: 100px 40px;
     row-gap: 30px;
 }
 
@@ -378,6 +378,9 @@ footer .footer-links a:hover {
     }
     h2 {
         margin-top: 40px;
+    }
+    .author {
+        margin-bottom: 40px;
     }
     .intro .photo-cont {
         flex: 350px;
