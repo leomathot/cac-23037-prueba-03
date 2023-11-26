@@ -194,8 +194,8 @@ h3 {
         var(--color-2) 80%,
         var(--color-4));
     color: var(--color-4);
-    margin-bottom: 20px;
-    margin-top: 60px;
+    margin-bottom: 25px;
+    margin-top: 55px;
     font-weight: 600;
 }
 
@@ -203,7 +203,7 @@ p {
     margin-bottom: 10px;
 }
 
-p:last-child {
+p:last-of-type {
     margin-bottom: 0;
 }
 
@@ -211,7 +211,7 @@ p:last-child {
     gap: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -346,9 +346,6 @@ footer .footer-links a:hover {
     }
     h2 {
         margin-top: 40px;
-    }
-    .author {
-        margin-bottom: 40px;
     }
     .boxes {
         gap: 15px;
