@@ -47,11 +47,11 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #484848;
+    background: #888;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #686868;
+    background: #aaa;
 }
 
 body {
@@ -162,7 +162,8 @@ h2 {
 }
 
 img {
-    height: 400px;
+    background: #202002;
+    height: 300px;
     margin: 20px 0;
     width: 100%;
     object-fit: cover;
@@ -346,6 +347,9 @@ footer .footer-links a:hover {
     }
     h2 {
         margin-top: 40px;
+    }
+    img {
+        height: 420px;
     }
     .boxes {
         gap: 15px;
