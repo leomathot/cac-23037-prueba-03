@@ -163,6 +163,7 @@ h2 {
 
 img {
     background: #202002;
+    display: block;
     height: 300px;
     margin: 20px 0;
     width: 100%;
@@ -179,7 +180,7 @@ img {
     margin: 0;
 }
 
-.author p:first-child {
+.author p:first-of-type {
     font-weight: 600;
 }
 
@@ -201,18 +202,15 @@ h3 {
 }
 
 p { 
-    margin-bottom: 10px;
+    margin: 15px 0;
 }
 
-p:last-of-type {
-    margin-bottom: 0;
-}
 
 .boxes {
     gap: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
+    margin: 20px 0;
     width: 100%;
 }
 
