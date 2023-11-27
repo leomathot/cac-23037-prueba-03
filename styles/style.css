@@ -165,7 +165,7 @@ img {
     background: #202002;
     display: block;
     height: 300px;
-    margin: 20px 0;
+    margin: 25px 0;
     width: 100%;
     object-fit: cover;
 }
@@ -196,7 +196,7 @@ h3 {
         var(--color-2) 80%,
         var(--color-4));
     color: var(--color-4);
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     margin-top: 55px;
     font-weight: 600;
 }
@@ -205,12 +205,11 @@ p {
     margin: 15px 0;
 }
 
-
 .boxes {
     gap: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 20px 0;
+    margin: 25px 0;
     width: 100%;
 }
 
@@ -265,7 +264,7 @@ ul {
     background: #f4f4f4;
     box-shadow: 0 2px 6px -3px var(--color-5);
     color: var(--mid-gray);
-    margin-bottom: 15px;
+    margin: 25px 0;
     padding: 35px 15px;
 }
 
