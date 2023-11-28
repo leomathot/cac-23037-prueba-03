@@ -310,6 +310,10 @@ footer {
     row-gap: 30px;
 }
 
+footer p {
+    margin: 0;
+}
+
 footer .footer-text {
     flex: 200px;
     text-align: center;
