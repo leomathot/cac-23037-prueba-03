@@ -64,11 +64,31 @@ body {
 /* Header */
 
 header {
-    background-image: url(../images/planets.jpg);
+    /* background: url(../images/planets.jpg); */
+    background:
+        repeating-linear-gradient(
+            45deg,
+            rgba(60, 2, 2, 0.2),
+            rgba(137, 26, 26, 0.1) 4px,
+            transparent 4px,
+            transparent 8px),
+        repeating-linear-gradient(
+            135deg,
+            rgba(171, 5, 5, 0.1),
+            rgba(83, 2, 2, 0.2) 4px,
+            transparent 4px,
+            transparent 8px),
+            linear-gradient(
+                135deg,
+                black,
+                black 10%,
+                var(--color-4) 40%,
+                var(--color-4) 60%,
+                var(--color-2) 80%,
+                var(--color-4));
     background-size: cover;
     background-position: center;
     display: flex;
-    min-height: 300px;
     padding: 20px 0;
 }
 
@@ -76,17 +96,18 @@ header {
     align-items: center;
     column-gap: 5px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 h1 {
-    background: rgba(0,0,0,0.7);
+    /* background: rgba(0,0,0,0.7); */
     color: var(--white);
     border-radius: 10px;
     font-size: 3.5rem;
     font-weight: 800;
     opacity: 0.85;
-    padding: 8px 20px;
+    /* padding: 8px 20px; */
     -webkit-text-stroke: 3px var(--white);
     -webkit-text-fill-color: transparent;
 }
@@ -338,8 +359,8 @@ footer .footer-links a:hover {
 /* Media queries */
 
 @media screen and (min-width: 760px) {
-    header {
-        min-height: 100px;
+    .header-cont {
+        justify-content: left;
     }
     body {
         font-size: 1.05em;
