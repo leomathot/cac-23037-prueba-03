@@ -286,7 +286,7 @@ ul {
 .specs {
     background: #f4f4f4;
     box-shadow: 0 2px 8px -3px var(--color-5);
-    margin: 25px 0 30px 0;
+    margin: 25px 0;
     padding: 35px 15px;
 }
 
