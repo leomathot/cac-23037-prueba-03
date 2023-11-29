@@ -68,14 +68,14 @@ header {
     background:
         repeating-linear-gradient(
             45deg,
-            rgba(60, 2, 2, 0.2),
-            rgba(137, 26, 26, 0.1) 4px,
+            rgba(45, 1, 1, 0.2),
+            rgba(167, 13, 13, 0.1) 4px,
             transparent 4px,
             transparent 8px),
         repeating-linear-gradient(
             135deg,
-            rgba(171, 5, 5, 0.1),
-            rgba(83, 2, 2, 0.2) 4px,
+            rgba(180, 8, 8, 0.2),
+            rgba(54, 1, 1, 0.1) 4px,
             transparent 4px,
             transparent 8px),
         linear-gradient(
