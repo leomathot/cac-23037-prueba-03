@@ -179,7 +179,7 @@ h2 {
         var(--color-4));
     color: var(--color-5);
     font-size: 1.5em;
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 20px;
     margin-top: 25px;
     padding-bottom: 10px;
@@ -391,6 +391,6 @@ footer .footer-links a:hover {
 
 @media screen and (min-width: 1000px) {
     h2 {
-        font-size: 1.65em;
+        font-size: 1.7em;
     }
 }
