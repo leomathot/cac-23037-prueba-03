@@ -316,7 +316,7 @@ ul {
 }
 
 .references a {
-    color: var(--color-4);
+    color: var(--black);
 }
 
 .references a:hover {
