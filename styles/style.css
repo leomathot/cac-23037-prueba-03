@@ -214,8 +214,7 @@ p {
 }
 
 .box {
-    background: #f4f4f4;
-    box-shadow: 0 2px 6px -3px var(--color-5);
+    box-shadow: 0 2px 8px -3px var(--color-5);
     color: var(--mid-gray);
     display: flex;
     flex-direction: column;
@@ -262,8 +261,8 @@ ul {
 
 .specs ul {
     background: #f4f4f4;
-    box-shadow: 0 2px 6px -3px var(--color-5);
-    margin: 25px 0;
+    box-shadow: 0 2px 8px -3px var(--color-5);
+    margin: 25px 0 30px 0;
     padding: 35px 15px;
 }
 
