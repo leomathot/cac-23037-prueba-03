@@ -78,14 +78,17 @@ header {
             rgba(83, 2, 2, 0.2) 4px,
             transparent 4px,
             transparent 8px),
-            linear-gradient(
-                135deg,
-                black,
-                black 10%,
-                var(--color-4) 40%,
-                var(--color-4) 60%,
-                var(--color-2) 80%,
-                var(--color-4));
+        linear-gradient(
+            #20000090,
+            #20000090),
+        linear-gradient(
+            135deg,
+            black,
+            black 10%,
+            var(--color-4) 40%,
+            var(--color-4) 60%,
+            var(--color-2) 80%,
+            var(--color-4));
     background-size: cover;
     background-position: center;
     display: flex;
